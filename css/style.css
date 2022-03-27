@@ -1,0 +1,989 @@
+			@font-face {
+	font-family: 'Nunito SemiBold';
+	src: url('../fonts/Nunito_semiBold/nunito_semibold.eot'); 
+	src: url('../fonts/Nunito_semiBold/nunito_semibold.eot') format('embedded-opentype'),
+		url('../fonts/Nunito_semiBold/nunito_semibold.woff2') format('woff2'),
+		url('../fonts/Nunito_semiBold/nunito_semibold.woff') format('woff'),
+		url('../fonts/Nunito_semiBold/nunito_semibold.ttf') format('truetype'),
+		url('../fonts/Nunito_semiBold/nunito_semibold.svg') format('svg');
+	}
+
+	@font-face {
+	font-family: 'Nunito_Bold';
+	src: url('../fonts/Nunito_Bold/nunito_bold.eot'); 
+	src: url('../fonts/Nunito_Bold/nunito_bold.eot?') format('embedded-opentype'), 
+		url('../fonts/Nunito_Bold/nunito_bold.woff2') format('woff2'), 
+		url('../fonts/Nunito_Bold/nunito_bold.woff') format('woff'), 
+		url('../fonts/Nunito_Bold/nunito_bold.ttf') format('truetype'), 
+		url('../fonts/Nunito_Bold/nunito_bold.svg') format('svg'); 
+}
+
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+			@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+			@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:wght@200;600&display=swap');
+
+			@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,600&display=swap');
+
+			@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+			.clearfix:after{
+				content: "";
+				clear: both;
+				display: block;
+			}
+
+			body,html{
+				scroll-behavior: smooth;
+			}
+			/*header*/
+
+			.wrapper{
+			width: 1140px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+
+			header{
+				background: url('../images/BG_header.png') no-repeat;
+				background-size: cover;
+				position: relative;
+			}	
+
+			header:before{
+				content: "";
+				top: 0;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0, 0, 0, .5);
+			}
+
+			.head{
+				margin-left: 15px;
+				font-size: 0;
+				text-align: right;
+				padding: 78px 10px;
+			}
+
+			 .head>a, .head img{
+			 	position: relative;
+				vertical-align: middle;
+			}
+
+			.head img{
+				margin-right: 240px;
+			}
+
+			.head ul{
+				display: inline-block;
+				font-size: 18px;
+			}
+
+			.head ul li{
+				font-size: 18px;
+				position: relative;
+				display: inline-block;
+				margin-left: 20px;
+				padding: 0 10px;
+			}
+
+			.head ul li a{
+				font-family: 'Nunito', sans-serif;
+				color: #ffffff;
+				text-decoration: none;
+			  	display: block;
+			}
+
+			.head ul li a:hover{
+				border-bottom: solid 3px #ffffff;
+			}
+
+			.slogan{
+				font-size: 48px;
+				color: #ffffff;
+				text-align: center;
+				position: relative;
+				font-family: 'Nunito SemiBold';
+			}		
+			
+			h1{
+				margin-bottom: 25px;
+			}
+
+			.podslogan{
+				font-size: 18px;
+				color: #ffffff;
+				text-align: center;
+				position: relative;
+				margin-top: 40px;
+				font-family: 'Nunito', sans-serif;
+			}
+
+			 .podslogan h3+h3{
+			 	margin-top: 20px;
+			 }
+
+			 .buttons{
+			 	margin: 40px 0 100px;
+			 	text-align: center;
+			 	font-family: 'Nunito', sans-serif;
+			 }			 
+
+			 .buttons input[type=submit]{
+			 	position: relative;
+			 	width: 161px;
+			 	height: 41px;
+			 	font-size: 14px;
+			 	margin: 12px;
+				border: solid 3px #FFFFFF;
+				color: #FFFFFF;
+			 	background: transparent;
+}
+			  .buttons input[type=submit]:hover{
+			 	background: white;
+			 	color: black;
+			 }
+
+			 .scrol{
+			 	margin-top: 40px;
+			 	height: 50px;
+			 	text-align: center;
+			 }			 
+
+			 .scrol_down a{
+			 	display: block;
+			 }
+
+			 .scrol_down{
+			 	display: inline-block;
+			 	width: 30px;
+			 	height: 5px;
+			 	position: relative;
+			 	border-radius: 10px;
+			 	background: #FFFFFF;
+			 	transform: rotate(45deg) translate(-15px, 0);	
+			 }
+
+			 .scrol_down:before{
+			 	content: "";
+			 	position:absolute;
+			 	top: 0;
+			 	right: 0;
+			 	width: 30px;
+			 	height: 5px;
+			 	border-radius:10px;
+			 	background: #FFFFFF;
+			 	transform: rotate(90deg);
+			 	transform-origin: 95%;
+			 	}
+
+/*main*/
+
+		.main{
+			background: url('../images/mainBG.png') no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.main:before{
+				content: "";
+				top: 0;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.1);
+			}
+
+		.text{
+			text-align: center;
+			color: #0F1417;
+		}
+
+		.wrapper h2{
+			font-size: 32px;
+			font-family: 'Nunito_Bold';
+			text-align: center;
+			padding: 40px 0 20px;
+		}
+
+		.text p{
+			font-family: 'Nunito', sans-serif;
+			font-size: 14px;
+			font-weight: 600;
+			margin: 20px;
+		}
+
+		.wave{
+			background: url('../sprites/css_sprites.png') -493px -392px;
+			width: 120px;
+			height: 12px;
+			margin: 40px auto;
+		}
+
+		.bread img{
+			display: inline-block;
+			width: 755px;
+		}
+
+		.bread{
+			font-size: 0;
+		}
+
+		.bread ul{
+			display: inline-block;
+			vertical-align:top;
+		}
+
+		.left_list li, .right_list li{
+			font-size: 18px;
+			margin: 40px 0 20px;
+			position: relative;
+		}
+
+		.left_list>li{
+			padding-right: 35px;
+		}
+
+		.right_list>li{
+			padding-left: 35px;
+			    margin: 50px 0 0 15px;
+		}
+
+		.left_list>li:nth-child(1){
+			margin: 30px 0 0px 20px;
+		}
+
+		.left_list>li:nth-child(3){
+			margin-top: 50px;
+			padding-left: 25px;
+		}
+
+		.left_list>li:nth-child(4){
+			padding-left: 25px;
+		}
+
+		.right_list>li:nth-child(1){
+			margin: 0;
+			padding-left: 0;
+		}
+
+		.right_list>li:nth-child(3),.right_list>li:nth-child(4){
+			padding-left: 55px;
+		}
+
+	
+		.left_list>li:before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 102%;
+			width: 20px;
+			height: 30px;
+			background: transparent;
+			border-top: solid 2px #0F1417;
+			border-right: solid 2px #0F1417;
+			transform: skew(45deg);
+			}
+
+			.left_list>li:nth-child(2):before{
+				left: 80%;
+				top: 50%;
+				transform: skew(60deg);
+			}
+
+			.left_list>li:nth-child(3):before, .left_list>li:nth-child(4):before{
+				top: -15px;
+				left: 162px;
+				width: 20px;
+				height: 25px;
+				border-bottom: solid 2px #0F1417;
+				border-top: transparent;
+				transform: skew(290deg);
+			}
+
+			.left_list>li:nth-child(4):before{
+				transform: skew(111deg);
+			}
+
+			.left_list>li:after{
+			content: "✓";
+			position: absolute;
+			top: 22%;
+			left: 84%;
+			width: 10px;
+			height: 10px;
+			background: transparent;
+			border-radius: 10px;
+			border: solid 2px #0F1417;
+			}
+
+			.left_list>li:nth-child(2):after,.left_list>li:nth-child(3):after, .left_list>li:nth-child(4):after{
+			top: 22%;
+			left: 60%;
+			}
+
+
+			.right_list>li:before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 125%;
+			width: 20px;
+			height:30px;
+			margin-left: 50px;
+			background: transparent;
+			border-top: solid 2px #0F1417;
+			border-left: solid 2px #0F1417;
+			transform: skew(-55deg);
+			}
+
+
+			.right_list>li:nth-child(2):before{
+			top: 50%;
+			right: 102%;
+			}
+
+			.right_list>li:nth-child(3):before, .right_list>li:nth-child(4):before{
+				top: -120%;
+				right: 105%;
+				border-bottom: solid 2px #0F1417;
+				border-top: transparent;
+				transform: skew(70deg);
+			}
+
+			.right_list>li:nth-child(4):before{
+				transform: skew(62deg);
+				right: 100%;
+			}
+
+			.right_list>li:after{
+			content: "✓";
+			position: absolute;
+			top: 13%;
+			right: 105%;
+			width: 10px;
+			height: 10px;
+			background: transparent;
+			border-radius: 10px;
+			border: solid 2px #0F1417;
+			}
+
+			.right_list>li:nth-child(2):after{
+			top: 13%;
+			right: 82%;
+			}
+
+			.right_list>li:nth-child(3):after, .right_list>li:nth-child(4):after{
+				top: 15%;
+				right: 73%;
+			}
+
+		.main .scrol_down,.main .scrol_down:before{
+			background: #091215;
+		}
+
+		
+/*price*/
+			.price h2{
+				color: #0F1417;
+			}
+
+			.variants{
+				margin: 0 auto;
+				width: 845px;
+				display: flex;
+			}
+
+			.flex{
+				flex: 0 0 161px;
+				height: 273px;
+				box-shadow: 0 10px 10px #f2e1e1;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			.variants img{
+				width: 112px;
+				height: 112px;
+				border-radius: 85px;
+				margin: 25px 0 0;
+			}
+
+			.flex p{
+				color: #0F1417;
+				margin: 15px 0 10px;
+				font-family:'Nunito SemiBold';
+			}
+
+			.flex p:nth-child(2) {
+				width: 103px;
+				margin: 15px auto;
+				font-size: 14px;
+				
+			}
+
+			.flex p:nth-child(3){
+				font-size: 10px;
+			}
+
+			.flex p:nth-child(4){
+				font-size: 16px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+			}
+
+			.scrols{
+			 	margin: 140px auto;
+			 	height: 50px;
+			 }			 
+
+			 .scrol_left{
+			 	display: inline-block;
+			 	width: 20px;
+			 	height: 3px;
+			 	position: relative;
+			 	border-radius: 10px;
+			 	background:#091215;
+			 	transform: rotate(135deg) translate(-85%);
+			 }
+
+			 .scrol_left:before{
+			 	content: "";
+			 	position:absolute;
+			 	top: 0;
+			 	right: 0;
+			 	width: 20px;
+			 	height: 3px;
+			 	border-radius:10px;
+			 	background: #091215;
+			 	transform: rotate(90deg);
+			 	transform-origin: 95%;
+			 	}
+
+			.scrol_right{
+			 	display: inline-block;
+			 	width: 20px;
+			 	height: 3px;
+			 	position: relative;
+			 	border-radius: 10px;
+			 	background:#091215;
+			 	transform: rotate(-45deg);	
+			 }
+
+			 .scrol_right:before{
+			 	content: "";
+			 	position:absolute;
+			 	top: 0;
+			 	right: 0;
+			 	width: 20px;
+			 	height: 3px;
+			 	border-radius:10px;
+			 	background: #091215;
+			 	transform: rotate(90deg);
+			 	transform-origin: 95%;
+			 	}
+
+			 	.dots{
+			 		margin-bottom: 50px;
+			 		text-align: center;
+			 	}
+
+			 	.dots li{
+			 		position: relative;
+			 		display: inline-block;
+			 		width: 9px;
+			 		height: 9px;
+			 		border-radius: 50%;
+			 		background: black;
+			 	}
+
+			 	.dots li a{
+			 		color: black;
+			 		display: block;
+			 	}
+
+			 	.head ul{
+				display: inline-block;
+				font-size: 18px;
+				padding-left: 10px;
+				vertical-align: middle;
+			}
+
+			.head ul li{
+				font-size: 18px;
+				position: relative;
+				display: inline-block;
+				margin-left: 20px;
+				padding: 0 10px;
+			}
+
+			.head ul li a{
+				font-family: 'Nunito', sans-serif;
+				color: #ffffff;
+				text-decoration: none;
+			  	display: block;
+			}
+
+			 	.wrapper>p{
+			 	text-align: center;
+			 	color: #170E0E;
+			 	font-size: 14px;
+			 	margin-top: 10px;
+			 	font-family:'Nunito SemiBold';
+
+			 	}
+
+			 	.price .buttons{
+			 		margin: 40px 0;
+			 	}
+
+			 	.price .buttons input[type=submit]{
+			 	border: solid 3px #091215;
+				color: #091215;
+				background: transparent;
+			 	}
+
+				.price .buttons input[type=submit]:hover{
+				background: #091215;
+			 	color: white;
+				}
+
+/*nav*/
+			nav{
+				background: url('../images/nav_bg.png');
+				background-size: cover;
+				position: relative;
+			}
+
+			nav:before{
+				content: "";
+				top: 0;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0, 0, 0, .5);
+			}
+
+			nav *{
+				position: relative;
+			}
+
+			nav h2{ 
+				position: relative;
+				color: #FFFFFF;
+			}
+
+			nav .wrapper p{
+				color: #FFFFFF;
+				margin-bottom: 20px;
+			}
+
+			nav .wave{
+				 background: url('../sprites/css_sprites.png') -265px -379px;
+				 margin-bottom: 50px;
+			}
+
+			.brend{
+				margin: 0 auto;
+				position: relative;
+				width: 730px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.brend div{
+				margin:10px 10px;
+				flex: 0 0 160px;
+				height: 60px;
+			}
+
+				.brend div a{
+				display: inline-block;	
+			}
+
+			.brend div:nth-child(1) a{
+				margin-top: 7px;
+			}
+
+			.brend div:nth-child(6) a, .brend div:nth-child(8) a{
+				margin-top: 15px;
+			}
+
+			.brend div:nth-child(7) a{
+				margin-top: 11px;
+			}
+
+
+/*about_as*/
+
+			.about_as h2{
+				color: #0B0806;
+			}
+
+			.facts{
+				margin: 0 auto;
+				width: 1088px;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.facts .in_facts{
+				padding-top: 62px;
+				position: relative;
+			}
+
+			.in_facts:before{
+				position: absolute;
+				content: "";
+				width: 62px;
+				height: 62px;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%);
+				background: url('../sprites/css_sprites.png') -493px -261px;
+			}
+
+			.facts div:nth-child(2):before{
+				background-position: -722px -35px;
+			}
+
+			.facts div:nth-child(3):before{
+				background-position: -167px -479px;
+			}
+
+			.facts div:nth-child(4):before{
+				background-position: -299px -479px;
+				transform: translate(-50%, 25%);
+			}
+
+			.facts div:nth-child(5):before{
+				background-position: -35px -479px;
+			}
+
+			.facts div:nth-child(6):before{
+				background-position: -493px -129px;
+
+			}
+
+			.facts p{
+				text-align: center;
+				color: #0B0806;
+				font-size: 14px;
+				font-family:'Nunito SemiBold';
+			}
+
+			.in_facts p:first-child{
+				font-size: 16px;
+				font-family: 'Nunito_Bold';
+				padding: 20px 0;
+			}
+
+			.in_facts p:nth-child(2){
+				width: 140px;
+				line-height: 20px;
+			}
+
+			.about_as .scrol{
+				margin-top: 70px;
+			}
+
+			.about_as .scrol_down{
+				background: #020101;
+			}
+
+			.about_as .scrol_down:before{
+				background: #020101;
+			}
+
+
+/*coupon*/
+
+			.coupon{
+			background: #F9F7F7;
+			background-size: cover;
+			font-size: 0;
+			padding: 70px 0;
+			}
+
+			.columns{
+				width: 1088px;
+				
+			}
+
+			.form{
+				display: inline-block;
+				font-size: 20px;
+				vertical-align: top;
+				width: 642px;
+			}
+
+			.form p{
+				line-height: 230%;
+			}
+
+			.coupon .buttons{
+				margin: 20px 0 100px;
+				text-align: left;
+			}
+
+			.coupon .buttons input[type=submit]{
+				margin: 10px 25px 0 0;
+			 	border: solid 3px #091215;
+				color: #091215;
+				background: transparent;
+			 }
+
+			.coupon .buttons input[type=submit]:hover{
+				background: #091215;
+			 	color: white;
+			}
+
+			.coupon input[type=email]{
+				width: 349px;
+				height: 49px;
+				border: solid black 1px;
+			}
+
+			.coupon label{
+				display: block;
+				position: relative;
+				cursor: pointer;
+				padding-left: 35px;
+				padding-top: 5px;
+				margin: 20px 0 5px;
+				color: #000101;
+				font-size: 12px;
+			}
+
+			.coupon label input[type=radio]{
+				position: absolute;
+				opacity: 0;
+				width: 0;
+				height: 0;
+			}
+
+			.coupon label span{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				border: solid black 1px;
+			}
+
+			.coupon .columns h2{
+				padding-top:0;
+				text-align: left;
+			}
+
+			.coupon p{
+				width: 612px;
+				margin-top: 20px;
+				font-family:'Nunito SemiBold';
+				font-size: 14px;
+				color: #0B0806;
+			}
+
+			.coupon p+p+p{
+				width: 537px;
+			}
+
+
+			.cut{
+				display: inline-block;
+				font-size: 20px;
+				text-align: center;
+				width: 440px;
+				position: relative;
+			 	background: repeating-linear-gradient(to right, #0B0806 0, #0B0806 40px, transparent 40px, transparent 55px),
+            	repeating-linear-gradient(to right, #0B0806 0, #0B0806 40px, transparent 40px, transparent 55px),
+            	repeating-linear-gradient(to top, #0B0806 0, #0B0806 40px, transparent 40px, transparent 55px),
+            	repeating-linear-gradient(to bottom, #0B0806 0, #0B0806 40px, transparent 40px, transparent 55px);
+       			background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
+        		background-position: 0 0, 0 100%, 0 0, 100% 0;
+        		background-repeat: no-repeat;
+    
+			}
+
+			.cut:before{
+				content: "";
+				position: absolute;
+				bottom: 60px;
+				left: -20px;
+				width: 42px;
+				height: 63px;
+				background:url('../sprites/css_sprites.png') -722px -161px;
+			}
+
+			.cut p{
+				margin: 20px auto;
+				color: #0B0806;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+			}
+
+			.cut>p:nth-child(1){
+				 margin-top: 48px;
+				width: 294px;
+				font-size: 46px;
+				text-transform: uppercase;
+			}
+
+			.cut>p:nth-child(2){
+				width: 294px;
+				font-size: 120px;
+				text-transform: uppercase;
+			}
+
+			.cut>p:nth-child(3){
+				width: 110px;
+				font-size: 24px;
+				text-transform: uppercase;
+			}
+
+			.cut img{
+				width: 202px;
+				height: 59px;
+			}
+
+			.cut>p:nth-child(5){
+				width: 277px;
+				font-size: 24px;
+				text-transform: uppercase;
+			}
+
+			.cut>p:nth-child(6){
+				margin: 40px auto 50px;
+				width: 300px;
+				font-size: 14px;
+				text-align: center;
+				line-height: 20px;
+			}
+
+/*footer*/
+
+			footer{
+				background: url(../images/footer_bg.png);
+				background-size: cover;
+			}
+
+			.in_footer{
+				position: relative;
+				padding:67px 0;
+				width: 1088px;
+				display: flex;
+				
+			}
+
+			.logo{
+				position: relative;
+				flex:1 1 695px;
+			}
+
+			.logo p{
+				font-size: 12px;
+				font-family: 'Open Sans', sans-serif;
+				color: #FFFFFF;
+				margin-top: 25px;
+			}
+
+			.social{
+				flex:1 1 120px;
+
+			}
+
+			.contacts{
+				flex:1 1 125px;
+			}
+
+			.contacts p, .social p{
+				font-size:14px;
+				color: #FFFFFF;
+				font-family: 'Open Sans', sans-serif;
+				margin-bottom: 12px;
+			}
+
+			.contacts p:first-child, .social p:first-child{
+				font-size: 16px;
+				font-weight: 600;
+				margin-bottom: 21px;
+			}
+
+
+			.social ul{
+				width: 106px;
+				font-size: 0;
+				position: relative;
+				margin-top: 9px;
+			}
+
+			.social ul li{
+				display: inline-block;
+				
+			}
+
+			.social li:nth-child(2){
+				margin: 0 11px;
+			}
+
+			.social li a{
+				display: block;
+				width: 28px;
+				height: 28px;
+				background:url('../sprites/css_sprites.png') -722px -294px;
+			}
+
+			.social li:nth-child(2) a{
+				background-position: -722px -392px;
+			}
+
+			.social li:nth-child(3) a{
+				background-position: -722px -489px;
